@@ -1,21 +1,25 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0%;
+
 }
 
+/* Header Stayle */
 
-.header-container{
+.header-container {
     width: 100%;
     height: 80px;
-    background-color: blueviolet;
+    background-color: black;
     color: white;
     position: relative;
     padding: 10px 10px;
 }
 
-.view-options{
-    background: grey;
+
+
+.view-options {
+    background: rgb(68, 68, 68);
     width: 130px;
     padding: 5px 2px;
     border-radius: 5px;
@@ -25,50 +29,101 @@
 }
 
 
-.fa-xmark{
+.fa-maximize {
     position: absolute;
     right: 5px;
     width: 30px;
-    background: grey;
+    background: rgb(68, 68, 68);
     padding: 6px 2px;
     border-radius: 5px;
     text-align: center;
 }
 
-/* if using as background image */
-/* .container1{
-    background-image: url(https://picsum.photos/300/200);
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-} */
 
 
+/* Main Style */
 
-.viewport-container{
+.viewport-container {
 
     display: flex;
-    justify-content:  ;
+    justify-content: center;
     padding: 10px 0px;
     flex-wrap: wrap;
-
-
+    height: calc(100vh - 180px);
     overflow: auto;
     margin: 0 auto;
+    background-color: black;
 }
 
-.image{
+.image {
     padding: 3px;
     position: relative;
 }
 
-.name-card{
+.name-card {
     display: flex;
-    background: rgba(128, 128, 128, 0.425);
+    background: rgba(190, 188, 188, 0.342);
     color: white;
-    width: 40%;
-    padding: 3px;
-    text-align: center;
+    width: 38%;
+    padding: 7px;
     position: absolute;
-    bottom: 15px;
+    bottom: 5px;
+}
+
+/* Footer Style */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: rgb(44, 44, 44);
+
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 8px;
+}
+
+.icon i:not(.fa-angle-up) {
+    font-size: 25px;
+
+}
+
+.icon p {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 5px;
+
+}
+
+.fa-angle-up {
+    font-size: 13px;
+
+}
+
+.fa-share-from-square {
+    color: rgb(56, 218, 56);
+}
+
+.footer-left {
+    color: red;
+    background-color: rgb(68, 68, 68);
+    width: 160px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    padding: 40px 15px;
+
+
 }
